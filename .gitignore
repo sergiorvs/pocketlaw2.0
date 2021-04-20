@@ -30,7 +30,6 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
-build/
 develop-eggs/
 dist/
 downloads/
@@ -111,10 +110,6 @@ media/
 
 # Celery
 celerybeat.pid
-
-# Test build frontend
-!tests_build_frontend/*
-!tests_build_frontend/build/*
 
 # Resources
 /resources/
