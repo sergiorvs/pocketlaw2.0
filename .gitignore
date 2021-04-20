@@ -105,9 +105,6 @@ __pycache__/
 *.dump
 *.db
 
-# Media
-media/
-
 # Celery
 celerybeat.pid
 
