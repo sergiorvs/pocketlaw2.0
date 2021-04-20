@@ -109,9 +109,6 @@ __pycache__/
 # Media
 media/
 
-# Frontend
-calaris-frontend/
-
 # Celery
 celerybeat.pid
 
