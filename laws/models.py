@@ -27,7 +27,7 @@ class Law(models.Model):
     """
     title = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField()
+    image = models.ImageField(null=True, blank=True)
     tag = models.ForeignKey(
         Tag,
         on_delete=models.CASCADE,
