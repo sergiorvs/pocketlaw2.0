@@ -8,20 +8,18 @@ from laws.models import (
 )
 
 
+class QuestionInLine(admin.TabularInline):
+    model = Question
+    extra = 1
+
+
 @admin.register(Law)
 class LawAdmin(admin.ModelAdmin):
     """
     Laws Admin
     """
-    pass
-
-
-@admin.register(Question)
-class QuestionAdmin(admin.ModelAdmin):
-    """
-    Question Admin
-    """
-    pass
+    list_display = ('title', 'tag')
+    inlines = [QuestionInLine, ]
 
 
 @admin.register(Tag)
