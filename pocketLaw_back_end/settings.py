@@ -179,8 +179,8 @@ GRAPHENE = {
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Celery
-# CELERY_BROKER_URL = 'redis://redistogo:7d4abc8de4334253309302cb53697dee@scat.redistogo.com:11721/0'
-CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_BROKER_URL = 'redis://redistogo:7d4abc8de4334253309302cb53697dee@scat.redistogo.com:11721/0'
+# CELERY_BROKER_URL = 'redis://localhost:6379/0'
 CELERY_RESULT_BACKEND = CELERY_BROKER_URL
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
