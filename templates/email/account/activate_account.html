@@ -2,12 +2,12 @@
 {% load i18n %}
 
 {% block title %}
-  {% trans 'Su cuenta ha sido activada exitosamente' %}
+  {% trans 'Bienvenido a PocketLaw amigo emprendedor' %}.
 {% endblock %}
 
 {% block content %}
   <p>
-    {% trans 'Saludos,' %}
+    {% trans 'Su email ha sido activado, además de contar con todo los servicios básicos usted  ahora cuenta con los siguientes beneficios' %}:
   </p>
   <p>
     {% trans 'Su email ha sido activado y ahora cuenta con los siguientes beneficios:' %}
@@ -17,7 +17,13 @@
       <th>{% trans 'Guardar sus leyes favoritas' %}</th>
     </tr>
     <tr>
-      <th>{% trans 'Editar leyes' %}</th>
+      <th>{% trans 'Soporte psicológico' %}</th>
+    </tr>
+    <tr>
+      <th>{% trans 'Información extra sobre el rubro de su emprendimiento' %}</th>
     </tr>
   </table>
+  <p>
+    {% trans 'Gracias por unirte!' %}
+  </p>
 {% endblock %}

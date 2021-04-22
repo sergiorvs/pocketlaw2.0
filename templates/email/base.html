@@ -1,27 +1,41 @@
 {% load inlinecss %}
 {% inlinecss "email/base.css" %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
 
-</head>
-<body class="body-test">
-<div class="main">
-  <div class="body-style">
-    <article>
-      <section class="mb-50 title-message">
-        {% block title %}
-        {% endblock %}
-      </section>
-      <section class="mb-50 content">
-        {% block content %}
-        {% endblock %}
-      </section>
-    </article>
+  </head>
+  <body class="body-test">
+  <div class="header">
+    <div class="logo">
+      <div class="logo-img">
+        <a href="https://pocketlaw.herokuapp.com/" target="_blank" rel={'noreferrer'}>
+          <img
+              src="https://i.ibb.co/K5pB22q/1-1.png"
+              alt={"Logo"}
+              width="auto"
+              height="100%"
+          />
+        </a>
+      </div>
+    </div>
   </div>
-</div>
-</body>
-</html>
+  <div class="content">
+    <div class="separator">
+      <article>
+        <section class="mb-50 title-message">
+          {% block title %}
+          {% endblock %}
+        </section>
+      </article>
+    </div>
+    <div class="description">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+  </body>
+  </html>
 {% endinlinecss %}
